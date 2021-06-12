@@ -1,5 +1,4 @@
-console.log("hello");
-
+// Number 1
 function hourglassSum(arr) {
   let sum_list = [];
 
