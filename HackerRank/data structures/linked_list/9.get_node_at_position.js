@@ -25,12 +25,10 @@ function getNode(llist, positionFromTail) {
   let current = llist;
   let values = [];
 
-  while (current.next) {
+  while (current) {
     values.push(current.data);
     current = current.next;
   }
 
   return values[values.length - positionFromTail];
 }
-
-// TAKEAWAY || APPROACH
