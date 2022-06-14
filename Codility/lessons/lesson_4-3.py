@@ -11,6 +11,7 @@ def solution(N, A):
     _counters = [0 for i in range(N)]
 
     max_values = []
+    
     for c in range(0, length):
         if A[c] <= N:
             indx = A[c]-1
