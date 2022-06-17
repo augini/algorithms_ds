@@ -1,4 +1,4 @@
-# My coding problem solutions on different platforms.
+# My solutions to coding challenges
 
 Languages:
 
