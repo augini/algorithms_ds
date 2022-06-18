@@ -1,0 +1,16 @@
+# Dynamic Programming Series
+
+## When to use DP ?
+
+1. **The first characteristic that is common in DP problems is that the problem will ask for the optimum value (maximum or minimum) of something, or the number of ways there are to do something**. For example:
+   - What is the minimum cost of doing...
+   - What is the maximum profit from...
+   - How many ways are there to do...
+   - What is the longest possible...
+   - Is it possible to reach a certain point...
+2. **The second characteristic that is common in DP problems is that future "decisions" depend on earlier decisions.** Deciding to do something at one step may affect the ability to do something in a later step. This characteristic is what makes a greedy algorithm invalid for a DP problem - we need to factor in results from previous decisions. Admittedly, this characteristic is not as well defined as the first one, and the best way to identify it is to go through some examples.
+   To summarize: if a problem is asking for the maximum/minimum/longest/shortest of something, the number of ways to do something, or if it is possible to reach a certain point, it is probably greedy or DP. With time and practice, it will become easier to identify which is the better approach for a given problem.
+
+---
+
+## Framework for DP problems
