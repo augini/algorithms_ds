@@ -13,10 +13,6 @@ class Solution:
            substring = s[slow:fast]
            
            if s[fast] not in substring:
-              
-              if fast == len(s) - 1:
-                 return fast - slow + 1
-              
               fast=fast+1
               
            elif s[fast] in substring:
@@ -26,6 +22,15 @@ class Solution:
                  max_length = length
                  
               slow = slow + 1
+        
+
+         
+        if s[fast-1] not in substring:
+           length =len(s[slow:fast])
+           
+           if length > max_length:
+              return length
+        
         
         return max_length
 
