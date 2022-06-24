@@ -1,4 +1,4 @@
-# My solutions to coding challenges
+# My solutions to coding challenges. 
 
 Languages:
 
