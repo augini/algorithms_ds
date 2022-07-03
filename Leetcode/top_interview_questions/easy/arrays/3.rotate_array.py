@@ -54,3 +54,7 @@ print(Sample.rotate_constant_memory([1,2,3,4,5,6,7], 3))
 # print(Sample.rotate_constant_memory([1,2,3,4,5,6,7,8,9], 3))
 # print(Sample.rotate_constant_memory([1,2,3,4,5,6], 11))
 
+[1,2,3,4,5,6,7]    # 7 - 3 = 4 0, length(arrray) - 1 - k
+[4, 3, 2, 1, 5, 6, 7] # length(arrray) - k , length(array)
+[4, 3, 2, 1, 7, 6, 5] # reverse everything
+[5, 6, 7, 1, 2 ,3 ,4]
