@@ -31,3 +31,5 @@ To solve a DP problem, we need to combine 3 things:
 ### Summary
 
 With DP problems, we can use logical thinking to find the answer to the original problem for certain inputs, in this case we reason that there is 1 way to climb to the first stair and 2 ways to climb to the second stair. We can then use a recurrence relation to find the answer to the original problem for any state, in this case for any stair number. **Finding the recurrence relation involves thinking about how moving from one state to another changes the answer to the problem.**
+
+## Strategic approach DP problems
