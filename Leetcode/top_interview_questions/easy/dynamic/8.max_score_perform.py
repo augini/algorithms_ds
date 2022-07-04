@@ -6,7 +6,7 @@ class Solution:
       first, end = 0, -1
       
       for ind, val in enumerate(multipliers):
-         print(queue)
+         # print(queue)
          while len(queue) <= 2**ind:
             _current = queue.pop(0)
             
@@ -23,7 +23,7 @@ class Solution:
             end = end -1
             
       # print(first, end)
-      print(indexes)
+      # print(indexes)
        
       return max(queue)
 
