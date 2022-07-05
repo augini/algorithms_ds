@@ -1,4 +1,4 @@
-# Data Types
+# Collection Data Types
 
 - Each collection data type has `.count` method to count the number of occurrances for each element
 - Each collection data type also supports **unpacking**
@@ -233,4 +233,81 @@ print(setA.symmetric_difference(setB)) # {4, 5, 6, 7, 8, 9, 10, 11, 12}
 a = frozenset([1,2,3,4])
 
 a.add(12) # 'frozenset' object has no attribute 'add'
+```
+
+## Collections module
+
+- Collections: Counter, namedtuple, OrderedDict, defaultDict, dequeue
+
+```python
+from collections import Counter
+
+names = ['john', 'michael', "mike", 'dunder', 'mike']
+count = Counter(names)
+print(count)
+
+# we can get the most common element from counter as below:
+print(count.most_common(1)) # [('mike', 2)]
+print(count.most_common(1)[0][0]) # mike
+
+#total() -> Compute the sum of the counts.
+print(count.total())
+```
+
+- We have named tuples in collections module that enable to access tuple data types with names
+
+```python
+from collections import namedtuple
+
+Point = namedtuple("Point","x,y")
+
+pt = Point(x=4,y=5)
+
+print(pt.x, pt.y)
+
+print(pt[0], pt[1])
+```
+
+- OrderedDict
+
+> OrderedDict has been less important now since built in dictionaries also rememember the order of insertion since Python 3.7
+
+- defaultdict - It will have the defualt value for the key if it has not been set yet
+- We will get a keyError if we try to access a key that does not exist in a normal dictionary, with default dict we get the default value
+
+```python
+from collections import defaultdict
+
+d = defaultdict(int)
+
+d['a'] = 1
+d['b'] = 2
+
+print(d['c']) # 0
+
+d = defaultdict(float)
+
+d['a'] = 1
+
+print(d['c']) # 0.0
+```
+
+- deque - deque is a double ended queue and can be used to add or remove elements from both sides of the list
+
+```python
+from collections import deque
+d = deque()
+
+d.append(1)
+d.append(4)
+
+d.appendleft(12)
+
+d.pop()
+d.popleft()
+
+d.rotate(1)
+d.rotate(-1)
+
+print(d)
 ```
