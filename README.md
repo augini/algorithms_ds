@@ -8,9 +8,9 @@
 ### Platforms
 
 - [LeetCode](https://leetcode.com/Farrukhbek/)
+- [BinarySearch](https://binarysearch.com/@/augini)
 - [HackerRank](https://www.hackerrank.com/farrukh_atabekov)
 - [Coderbyte](https://www.youtube.com/c/CoderbyteDevelopers)
-- [Codility](https://app.codility.com/programmers/)
 
 ### Notes
 

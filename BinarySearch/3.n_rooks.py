@@ -1,6 +1,8 @@
 class Solution:
     def solve(self, n):
-      return 0
+      if n == 1: return 1
+      
+      return n * self.solve(n-1)
          
 sample = Solution()
-print(sample.solve(5))
+print(sample.solve(3))
