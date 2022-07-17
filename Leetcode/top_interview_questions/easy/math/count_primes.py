@@ -2,7 +2,7 @@
 from collections import Counter
 
 
-class Solution:
+class _Solution:
     def __init__(self):
         self.prime_nums = [2,3]
         
@@ -31,22 +31,29 @@ class Solution:
    
 ############### Sieve of Eratosthenes
     
-class _Solution:
+class Solution:
     def countPrimes(self, n: int) -> int:
        nums = list(range(n))
-       
-       for i, val in enumerate(nums, 2):
-          if val == -1:
+       _len = len(nums)
+        
+       i = 0
+       while i*i < _len and _len > 2:
+          i+=1
+          val = nums[i]
+          
+          if val <= 1:
              continue
-
+            
           for j in range(i+i, len(nums), i):
-            #  print(j, nums[j])
              nums[j] = -1
-      #  print(nums)
+                
        count = Counter(nums)
-       return len(nums) -count[-1] - count[0] - count[1] 
+       
+       return len(nums) - count[-1] - count[0] - count[1] 
    
-sample = _Solution()
+sample = Solution()
 # print(sample.countPrimes(499979))
-print(sample.countPrimes(10))
+# print(sample.countPrimes(100))
 # print(sample.countPrimes(5))
+print(sample.countPrimes(10000)) # 1229
+print(sample.countPrimes(10))
