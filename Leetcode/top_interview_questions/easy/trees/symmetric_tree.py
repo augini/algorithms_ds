@@ -5,7 +5,7 @@ class TreeNode:
         self.left = left
         self.right = right
 
-class Solution:
+class _Solution:
     def isSymmetric(self, root) -> bool:
         
         items = self.inorder(root, "root", [])
@@ -29,3 +29,19 @@ class Solution:
             
         return col
         
+class Solution:
+    def isSymmetric(self, root) -> bool:
+        if root == None:
+            return True
+        
+        return self.check(root.left, root.right)
+    
+    def check(self, left, right):
+        
+        if left == None or right == None:
+            return left == right
+
+        if left.val != right.val:
+            return False
+        
+        return self.check(left.right, right.left) and self.check(left.left, right.right)
