@@ -2,8 +2,8 @@
 
 ### Languages
 
-- Python 😋
-- JavaScript 😍
+- Python 😍
+- JavaScript 😋
 
 ### Platforms
 
