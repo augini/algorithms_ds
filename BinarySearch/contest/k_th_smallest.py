@@ -1,20 +1,24 @@
-# class Tree:
-#     def __init__(self, val, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
-class Solution:
-    def solve(self, root, k):
-        result = []
-        def pre_order(node):
-            if node.left:
-                pre_order(node.left)
+# https://binarysearch.com/room/Leaf-Village-yyOFMnkJM8?questionsetIndex=1
 
-            result.append(node.val)
+class Tree:
+    def __init__(self, val, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+class Solution:
+    result = []
+
+    def solve(self, root, k):
+        self.result = []
+        def k_smallest(node):
+            if node.left:
+                k_smallest(node.left)
+
+            self.result.append(node.val)
 
             if node.right:
-                pre_order(node.right)
+                k_smallest(node.right)
 
-        pre_order(root)
+        k_smallest(root)
+        return self.result[k]
         
-        return result[k]
