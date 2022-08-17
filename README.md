@@ -24,6 +24,9 @@
 <li>
 <a href = "https://github.com/augini/_algorithms_ds/blob/master/Leetcode/dynamic_programming/patterns.md">Problem Solving Patterns</a>
 </li>
+<li>
+<a href = "https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns">DP Patterns and Problems for those patterns</a>
+</li>
 
 </ul>
 </details>
