@@ -7,7 +7,7 @@
 
 ### Platforms
 
-- [LeetCode](https://leetcode.com/Farrukhbek/)
+- [LeetCode](https://leetcode.com/Atabekov/)
 - [BinarySearch](https://binarysearch.com/@/augini)
 - [HackerRank](https://www.hackerrank.com/farrukh_atabekov)
 - [Coderbyte](https://www.youtube.com/c/CoderbyteDevelopers)
