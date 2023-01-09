@@ -75,6 +75,18 @@ while i < n:
     # Statement(s) that take(s) constant time
 ```
 
-`Running Time Complexity = (n)(n-1) = n^2-n = O(n^2)`
+`Running Time Complexity = log_k(n) = O(log_k(n))`
+
+Explanation: A loop statement that multiplies/divides the loop variable by a constant such as the above takes log(k) of n time because the loop runs that many times. Let’s consider an example where i = 1, n = 16, and k = 2:
+
+| i   | Count |
+| --- | ----- |
+| 1   | 1     |
+| 2   | 2     |
+| 4   | 3     |
+| 8   | 4     |
+| 16  | -     |
+
+log_k(n) = log_2(16) = 4
 
 </details>
