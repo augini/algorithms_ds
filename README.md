@@ -1,9 +1,10 @@
-# My solutions to coding challenges
+# Algorithmic problems, solutions and notes
 
 ### Languages
 
 - Python 😍
 - JavaScript 😋
+- More 😁
 
 ### Platforms
 
