@@ -27,7 +27,6 @@ class Solution:
         return is_identical(p, q)
 
     def _isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
-
         if p is None or q is None:
             return q == q
 
