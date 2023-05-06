@@ -3,7 +3,6 @@ from typing import List
 
 
 class Solution:
-class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
         R, C = len(board), len(board[0])
 
