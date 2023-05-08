@@ -6,7 +6,7 @@ import heapq
 class Solution:
 
     def maxProduct(self, nums: List[int]) -> int:
-        max_heap = list(map(lambda x: x * -1, nums))
+        max_heap = [-num for num in nums]
         heapq.heapify(max_heap)
         max1 = heapq.heappop(max_heap)
         max2 = heapq.heappop(max_heap)
