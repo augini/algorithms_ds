@@ -24,6 +24,6 @@ There are different ways to handle collisions that include algorithms such as **
 
 There is also a concept called **perfect hashing** which means to have a hash table with no collisions.
 
-No matter how efficient the collision handling techniques are, if we keep inserting keys to the hash table, we will reach a point where its array size is met or if using a separate chaining algorith, it starts to loose the constant retrieval property of hash table. So come a technique called **rehashing** which means to move the existing keys in the array to a new array with a larger size.
+No matter how efficient the collision handling techniques are, if we keep inserting keys to the hash table, we will reach a point where its array size is met or if using a separate chaining algorithm, it starts to loose the constant retrieval property of hash table. So come a technique called **rehashing** which means to move the existing keys in the array to a new array with a larger size.
 
 When to apply rehashing is determined by **load factor** which is a value calculated by n / m. (n=keys in the array, m=array size).

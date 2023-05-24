@@ -1,8 +1,7 @@
 from typing import Any
 
+
 # The implementation of hash table from inside code
-
-
 class Node:
     def __init__(self, key, value, next=None):
         self.key: str = key
