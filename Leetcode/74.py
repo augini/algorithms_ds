@@ -11,7 +11,7 @@ class Solution:
             if matrix[mid][-1] < target:
                 start = mid + 1
             elif matrix[mid][0] > target:
-                end = mid
+                end = mid - 1
             else:
                 # do binary search inside the row
                 r = matrix[mid]
@@ -21,7 +21,7 @@ class Solution:
                     if r[mid] < target:
                         start = mid + 1
                     elif r[mid] > target:
-                        end = mid
+                        end = mid - 1
                     else:
                         return True
         return False
