@@ -64,3 +64,21 @@ def find_pair(my_list):
                 result.append(second_pair)
                 return result
     return result
+
+
+# Problem #3
+# You must implement the find_sub_zero(my_list) function which will take in a list of positive and negative integers.
+# It will tell us if there exists a sublist in which the sum of all elements is zero.
+# The term sublist implies that the elements whose sum is 0 must occur consecutively.
+
+
+def find_sub_zero(my_list):
+    sums = set()
+    _sum = 0
+    for num in my_list:
+        _sum += num
+        if num == 0 or _sum == 0 or _sum in sums:
+            return True
+        else:
+            sums.add(_sum)
+    return False
