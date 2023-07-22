@@ -20,5 +20,6 @@ class Solution:
 
 
 sample = Solution()
-print(sample.jump([1, 1, 1, 1]))
+# print(sample.jump([1, 1, 1, 1]))
 # print(sample.jump([2, 3, 1]))
+print(sample.jump([2, 3, 1, 1, 4]))
