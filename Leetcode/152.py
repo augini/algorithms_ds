@@ -12,7 +12,9 @@ class Solution:
             tmp = nums[i] * mx
             mx = max(nums[i] * mx, nums[i] * mn, nums[i])
             mn = min(tmp, nums[i] * mn, nums[i])
+
             result = max(result, mx)
+
         return result
 
     def _maxProduct(self, nums: List[int]) -> int:
